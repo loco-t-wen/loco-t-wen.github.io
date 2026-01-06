@@ -1,4 +1,5 @@
 url: https://loco-t-wen.github.io/
+baseurl: /
 
 collections:
   tags:
