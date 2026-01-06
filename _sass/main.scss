@@ -1,0 +1,30 @@
+@use "theme";
+
+.current {
+  color: theme.$green;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.content, header {
+  margin: 40px auto 40px auto;
+}
+
+.content, header {
+  width: 800px;
+}
+
+#pfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid theme.$magenta;
+
+  &:hover {
+    border-color: theme.$yellow;
+  }
+}
