@@ -1,19 +1,15 @@
 <style>
-    #menuBtn { 
-        anchor-name: menu-anchor;
-    } 
     #navigation {
-        position-anchor: menu-anchor;
-        position: fixed;
-        inset-block-start: anchor(end);
-        inset-inline-start: anchor(self-end);
+        border: solid 3px;
         margin: 0;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 </style>
 
-<button id="menuBtn" popovertarget="navigation" type="button"></button>
-
-<nav id="navigation" popover>
+<nav id="navigation">
     {% for item in site.data.navigation %}
         <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
     {% endfor %}
