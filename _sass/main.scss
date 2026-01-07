@@ -16,7 +16,7 @@ body {
 }
 
 .content, header {
-  width: 800px;
+  max-width: 800px;
 }
 
 #pfp {
@@ -28,4 +28,27 @@ body {
   &:hover {
     border-color: $yellow;
   }
+}
+
+ul {
+  list-style: none;
+}
+
+.tags {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.tag {
+  background-color: $base02;
+  padding: 2px 4px;
+}
+
+.meta {
+  line-height: 1.6;
+  padding-left: 6px;
+  border-left: 3px solid $base0;
 }
