@@ -1,0 +1,37 @@
+---
+title: Blog
+---
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in paginator.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+         {{ post.date | date_to_string  }}
+      <br>
+      <ul class="tags"> 
+        <span>  :</span>
+        {% for tag in site.tags %}
+            {% if post.tags contains tag.tag-name %}
+                <li class="tag"><a href="{{ tag.url }}">#{{ tag.tag-name }}</a></li>
+            {% endif %} 
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>

@@ -6,7 +6,8 @@ layout: default
 <div class="meta">
      : {{ page.date | date_to_string }} 
     <ul class="tags"> 
-        <span>  :</span>
+        <li><span>   </span></li>
+          
         {% for tag in site.tags %}
             {% if page.tags contains tag.tag-name %}
                 <li class="tag"><a href="{{ tag.url }}">#{{ tag.tag-name }}</a></li>
