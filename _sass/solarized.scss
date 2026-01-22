@@ -35,8 +35,6 @@ $green:     #859900;
     padding-left: 6px;
     border-left: 3px solid $rebase0;
   }
-
-  color:$rebase0;
   * { color:$rebase0; }
   h1,h2,h3,h4,h5,h6 { color:$orange; border-color: $rebase0; }
   a, { 
@@ -57,13 +55,4 @@ html, .dark { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$bas
 html * {
     color-profile: sRGB;
     rendering-intent: auto;
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  src:
-    url('/assets/fonts/fa.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }

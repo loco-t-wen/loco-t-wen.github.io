@@ -11,7 +11,7 @@ You can contact me by the email
     moc.<!-- f9km@de -->liamg@<span class="spamprotect">f3jf@gmail</span>2291.it.<!-- @j4882jf.com -->tncol
 </a>
 
-<nav>
-    <a> </a>
-    <a> </a>
+<nav class="contacts">
+    <a></a>
+    <a></a>
 </nav>
